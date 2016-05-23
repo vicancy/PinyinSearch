@@ -171,6 +171,18 @@ var dataEngine = function (_) {
 
 window.onload = function () {
 	var input = $("#search-box-input")[0];
+	window.addEventListener('keyup', function(e){
+		// Enter key as the shortcut to focus to input
+		if (e.code === 'Enter'){
+			input.focus();
+		}
+	})
+	input.addEventListener('keyup', function(e){
+		// Delete key as the shortcut to cleanup input
+		if (e.code === 'Delete'){
+			input.value = '';
+		}
+	});
 	input.addEventListener('input', function () {
 		var val = input.value;
 		search(val);
