@@ -22,8 +22,8 @@ input {
 	box-shadow: none;
 }
 table {
-	width: 100% -60px;
-	margin: 30px;
+	width: 100%;
+	padding: 30px;
 }
 th, td {
 	border-bottom: 1px solid #e1e1e1;
