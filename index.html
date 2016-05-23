@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr">
 
 <head>
 	<meta charset="utf-8" />
@@ -7,7 +7,10 @@
 	<title>拼音搜索</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="main.css" rel="stylesheet" type="text/css">
+	
 	<script type="text/javascript" src="vendor/mustache.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </head>
@@ -16,7 +19,18 @@
 	<div id="search-group">
 		<div id="search-box-group">
 			<input id="search-box-input" placeholder="输入拼音搜索..." />
-			<span class="data-source">Data source: <a href="data.json" target="_blank">data.json</a></span>
+			<span class="data-source">Data source: 
+				<ul>
+					<li class="active">
+						<a href="data-xjl.json" target="_blank"><i class="fa fa-external-link"></i></a>
+						<span class="data-source-selector">data-xjl.json</span>
+					</li>
+					<li>
+						<a href="data-keju.json" target="_blank"><i class="fa fa-external-link"></i></a>
+						<span class="data-source-selector">data-keju.json</span>
+					</li>
+				</ul>
+			</span>
 		</div>
 		<div id="search-group-content"></div>
 	</div>
